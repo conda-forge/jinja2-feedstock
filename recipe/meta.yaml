@@ -34,7 +34,7 @@ test:
 about:
   home: http://jinja.pocoo.org
   license: 3-Clause BSD
-  license_file: LICENSE
+  license_file: LICENSE.rst
   summary: An easy to use stand-alone template engine written in pure python.
   description: |
     Jinja2 is a full featured template engine for Python. It has full unicode
