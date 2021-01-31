@@ -5,9 +5,13 @@ Home: http://jinja.pocoo.org
 
 Package license: 3-Clause BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jinja2-feedstock/blob/master/LICENSE.txt)
 
 Summary: An easy to use stand-alone template engine written in pure python.
+
+Development: https://github.com/pallets/jinja
+
+Documentation: http://jinja.pocoo.org/docs/dev/
 
 Jinja2 is a full featured template engine for Python. It has full unicode
 support, an optional integrated sandboxed execution environment, widely
