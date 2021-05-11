@@ -19,17 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
-
+    - python >=3.6
   run:
-    - python
-    - setuptools
-    - markupsafe >=0.23
+    - markupsafe >=2.0.0rc2
+    - python >=3.6
 
 test:
   imports:
     - jinja2
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://jinja.pocoo.org
