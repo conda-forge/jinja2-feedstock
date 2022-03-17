@@ -5,7 +5,7 @@ Home: http://jinja.pocoo.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jinja2-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jinja2-feedstock/blob/main/LICENSE.txt)
 
 Summary: An easy to use stand-alone template engine written in pure python.
 
@@ -24,8 +24,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3965&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jinja2-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3965&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jinja2-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -129,4 +129,5 @@ Feedstock Maintainers
 * [@msarahan](https://github.com/msarahan/)
 * [@nehaljwani](https://github.com/nehaljwani/)
 * [@scopatz](https://github.com/scopatz/)
+* [@xylar](https://github.com/xylar/)
 
