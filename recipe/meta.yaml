@@ -13,19 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
 
   run:
-    - python
+    - python >=3.5
     - setuptools
-    - markupsafe >=0.23
+    - markupsafe >=0.23,<2
 
 test:
   imports:
