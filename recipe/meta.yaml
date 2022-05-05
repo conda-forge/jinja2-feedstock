@@ -1,6 +1,6 @@
 {% set name = "Jinja2" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "640bed4bb501cbd17194b3cace1dc2126f5b619cf068a726b98192a0fde74ae9" %}
+{% set version = "3.1.2" %}
+{% set sha256 = "31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852" %}
 
 package:
   name: {{ name|lower }}
