@@ -1,21 +1,41 @@
 About jinja2
 ============
 
-Home: http://jinja.pocoo.org
+Home: https://palletsprojects.com/p/jinja/
 
 Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jinja2-feedstock/blob/main/LICENSE.txt)
 
-Summary: An easy to use stand-alone template engine written in pure python.
+Summary: A very fast and expressive template engine.
 
-Development: https://github.com/pallets/jinja
+Development: https://github.com/pallets/jinja/
 
-Documentation: http://jinja.pocoo.org/docs/dev/
+Documentation: https://jinja.palletsprojects.com/
 
-Jinja2 is a full featured template engine for Python. It has full unicode
-support, an optional integrated sandboxed execution environment, widely
-used and BSD licensed.
+Jinja is a fast, expressive, extensible templating engine. Special
+placeholders in the template allow writing code similar to Python
+syntax. Then the template is passed data to render the final document.
+
+It includes:
+
+-   Template inheritance and inclusion.
+-   Define and import macros within templates.
+-   HTML templates can use autoescaping to prevent XSS from untrusted
+    user input.
+-   A sandboxed environment can safely render untrusted templates.
+-   AsyncIO support for generating templates and calling async
+    functions.
+-   I18N support with Babel.
+-   Templates are compiled to optimized Python code just-in-time and
+    cached, or can be compiled ahead-of-time.
+-   Exceptions point to the correct line in templates to make debugging
+    easier.
+-   Extensible filters, tests, functions, and even syntax.
+
+Jinja's philosophy is that while application logic belongs in Python if
+possible, it shouldn't make the template designer's job difficult by
+restricting functionality too much.
 
 
 Current build status
