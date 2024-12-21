@@ -1,4 +1,4 @@
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 
 package:
   name: jinja2
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jinja2/jinja2-{{ version }}.tar.gz
-  sha256: 4a3aee7acbbe7303aede8e9648d13b8bf88a429282aa6122a993f0ac800cb369
+  sha256: 8fefff8dc3034e27bb80d67c671eb8a9bc424c0ef4c0826edbff304cceff43bb
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
