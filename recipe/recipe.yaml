@@ -1,38 +1,40 @@
-{% set version = "3.1.6" %}
+schema_version: 1
+
+context:
+  name: jinja2
+  version: "3.1.6"
 
 package:
-  name: jinja2
-  version: {{ version }}
+  name: ${{ name }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/j/jinja2/jinja2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jinja2/jinja2-${{ version }}.tar.gz
   sha256: 0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+  number: 1
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
     - flit-core <4
     - pip
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
   run:
     - markupsafe >=2.0
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
 
-test:
-  imports:
-    - jinja2
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
+tests:
+  - python:
+      python_version: ${{ python_min }}.*
+      imports:
+        - jinja2
+      pip_check: true
 
 about:
-  home: https://palletsprojects.com/p/jinja/
+  homepage: https://palletsprojects.com/p/jinja/
   license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: A very fast and expressive template engine.
@@ -60,8 +62,8 @@ about:
     Jinja's philosophy is that while application logic belongs in Python if
     possible, it shouldn't make the template designer's job difficult by
     restricting functionality too much.
-  doc_url: https://jinja.palletsprojects.com/
-  dev_url: https://github.com/pallets/jinja/
+  documentation: https://jinja.palletsprojects.com/
+  repository: https://github.com/pallets/jinja/
 
 extra:
   recipe-maintainers:
